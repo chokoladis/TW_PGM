@@ -1,0 +1,223 @@
+*{
+    transition: all .3s ease;
+}
+
+
+body{
+    margin: 0;padding: 0;
+    font-family: "Bahnschrift",sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+section{
+    margin-top: 30px;
+}
+.container{
+    margin: 0px auto;
+    position: relative;
+}
+.slider{
+    margin: 0px auto;
+}
+.news_block{
+    display: flex;
+}
+.tags{
+    width: 85%;
+    display: flex;
+}
+a{
+    text-decoration: none;
+    font-weight: 400;
+    color: #78878c;
+    border: 2px solid #7c8692;
+    border-top-left-radius: 17px;
+    border-bottom-right-radius: 17px;
+    padding: 14px 23px;
+    font-size: 19px;
+    margin-right: 22px;
+    overflow: hidden;
+    transition: .5s;
+    display: block;
+}
+.tags a::after{
+    content: "";
+    height: 130%;
+    width: 200%;
+    left: -50%;
+    top: 50px;
+    background: white;
+    transition: .4s ease-in;
+    position: relative;
+    display: block;
+    right: 0;
+}
+.tags a:hover{
+    background: #7c8692;
+    color: white;
+}
+.tags a:hover::after{
+    top: -70px;
+}
+.slider{
+    margin-top: 54px;
+}
+.slider .slider_item {
+    width: 600px;
+    cursor: pointer;
+    margin-right: 50px;
+}
+.slider .slider_item .pic{
+    width: 100%;
+    height: 370px;
+    position: relative;
+    overflow: hidden;
+}
+.slider .slider_item .pic img{
+    height: 100%;
+    width: 100%;
+    transform: scale(1.0);
+}
+.slider .slider_item:hover img{
+    transform: scale(1.05);   
+}
+.slider .slider_item a{
+    position: absolute;
+    bottom: 0;
+    border-top-left-radius: 17px;
+    border-bottom-right-radius:17px;
+    font-size: 19px;
+    padding:  14px 23px;
+    background: #27333f;
+    border: 0px;
+    color: #f3f6fb;
+}
+.slider .slider_item:hover a{
+    color: #27333f;
+    background: #f3f6fb;
+}
+.slider .slider_item h4{
+    text-transform: none;
+    font-size: 28px;
+    margin-left: 20px;
+    margin-top: 40px;
+}
+.about_news{
+    margin-top: 35px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    color: #adb6bf;
+}
+.about_news p{
+    margin: 0;
+    height: 20px;
+    position: absolute;
+    right: 0;
+}
+.about_news p::after{
+    background: url("../img/eyse.png") no-repeat center center /contain;
+    opacity: .3;
+    width: 20px;
+    height: 15px;
+    position: relative;
+    left: -30px;
+    content: "";
+    display: block;
+    top: -17px;
+}
+
+
+
+
+.slider-item .title{
+    display: flex;
+}
+.slider-item .about_man{
+    width: 237px;
+    margin-left: 16px;
+}
+.slider-item .about_man h6{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
+}
+.slider-item span{
+    font-family: GraphikLCG_light, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    color: #5E646A;
+}
+.slider-item p{
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    font-family: GraphikLCG_light, sans-serif;
+    width: 297px;
+
+}
+
+.slick-list{
+    overflow: hidden;
+}
+.slick-track{
+    display: flex;
+}
+.slider .slick-arrow{
+    position: absolute;
+    font-size: 0;
+    height: 20px;
+    width: 25px;
+    background: url(../img/arrow.png) center / contain no-repeat;
+    cursor: pointer;
+    border: 0;
+}
+.slider .slick-prev{
+    top: 5px;
+    right: 270px;
+}
+.slider .slick-next{
+    top: 6px;
+    right: 50px;
+    transform: scale(-1);
+}
+.slider .slick-dots{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    right: 90px;
+}
+.slider li.slick-active button{
+    background: #22303d !important;
+    filter: saturate(100%) !important;
+}
+.slider .slick-dots li{
+    list-style: none;
+    margin: 0px 15px;
+}
+.slider .slick-dots button{
+    font-size: 0;
+    cursor: pointer;
+    width: 10px;
+    height: 10px;
+    background: #6e8595;
+    filter: saturate(0%);
+    border: 0px;
+    border-radius: 35px;
+}
+.slider .slick-dots button:hover{
+    filter: saturate(50%);
+}
