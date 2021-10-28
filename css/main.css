@@ -23,12 +23,13 @@ section{
 .slider{
     margin: 0px auto;
 }
-.news_block{
-    display: flex;
+.news{
+    width: 73%;
+    overflow: hidden;
 }
 .tags{
-    width: 85%;
     display: flex;
+    width: max-content;
 }
 a{
     text-decoration: none;
@@ -132,41 +133,6 @@ a{
     top: -17px;
 }
 
-
-
-
-.slider-item .title{
-    display: flex;
-}
-.slider-item .about_man{
-    width: 237px;
-    margin-left: 16px;
-}
-.slider-item .about_man h6{
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 24px;
-    letter-spacing: 0em;
-}
-.slider-item span{
-    font-family: GraphikLCG_light, sans-serif;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 16px;
-    letter-spacing: 0em;
-    color: #5E646A;
-}
-.slider-item p{
-    margin-top: 20px;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0em;
-    font-family: GraphikLCG_light, sans-serif;
-    width: 297px;
-
-}
-
 .slick-list{
     overflow: hidden;
 }
@@ -181,23 +147,24 @@ a{
     background: url(../img/arrow.png) center / contain no-repeat;
     cursor: pointer;
     border: 0;
+    top: 3.2%;
+    z-index: 4;
 }
 .slider .slick-prev{
-    top: 5px;
     right: 270px;
 }
 .slider .slick-next{
-    top: 6px;
     right: 50px;
     transform: scale(-1);
 }
 .slider .slick-dots{
+    z-index: 4;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0;
     position: absolute;
-    top: 0;
+    top: 2.5%;
     right: 90px;
 }
 .slider li.slick-active button{
@@ -218,6 +185,29 @@ a{
     border: 0px;
     border-radius: 35px;
 }
-.slider .slick-dots button:hover{
-    filter: saturate(50%);
+
+@media screen and (max-width:1400px){
+    .slider .slider_item .pic{
+        height: 320px;
+    }
+}
+@media screen and (max-width:1220px){
+    .slider .slider_item .pic{
+        height: 270px;
+    }
+    .slider .slider_item a {
+        font-size: 17px;
+    }
+    .news{
+        width: 67%;
+    }
+}
+@media screen and (max-width:1130px){
+    .news{
+        width: 67%;
+    }
+}
+
+@media screen and (max-width:930px){
+
 }
