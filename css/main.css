@@ -24,7 +24,7 @@ section{
     margin: 0px auto;
 }
 .news{
-    width: 73%;
+    width: 79%;
     overflow: hidden;
 }
 .tags{
@@ -151,7 +151,7 @@ a{
     z-index: 4;
 }
 .slider .slick-prev{
-    right: 270px;
+    right: 230px;
 }
 .slider .slick-next{
     right: 50px;
@@ -199,15 +199,45 @@ a{
         font-size: 17px;
     }
     .news{
-        width: 67%;
+        width: 77%;
     }
 }
 @media screen and (max-width:1130px){
     .news{
-        width: 67%;
+        width: 72%;
     }
 }
 
 @media screen and (max-width:930px){
-
+    .news{
+        width: 66%;
+    }
+}
+@media screen and (max-width:760px){
+    .slider .slider_item .pic {
+        height: 300px;
+    }
+    .news,.slick-arrow{
+        display: none !important;
+    }
+    .slick-list{
+        overflow-x: scroll;
+    }
+    .slick-list::-webkit-scrollbar {
+        width: 90%;
+        height: 50px;     
+    }
+      
+    .slick-list::-webkit-scrollbar-track {
+        background: #f8f8f8;
+    }
+      
+    .slick-list::-webkit-scrollbar-thumb {
+        width: 140px;
+        height: 30px;
+        margin: auto 0px;
+        background-color: #d2d7dd;    /* color of the scroll thumb */
+        border-radius: 40px;       /* roundness of the scroll thumb */
+        border:0;  /* creates padding around scroll thumb */
+      }
 }
